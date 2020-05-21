@@ -3,41 +3,12 @@
 # for index, value in enumerate(name):
 #     print(f'index of {value} is equal to {index}')
 
-
 # first_collection = [1, 2, 3, 4, 5]
 # second_collection = ['I', 'II', 'III', 'IV', 'V']
 # third_collection = ['a', 'b', 'c', 'd', 'e']
 
 # for first, second, third in zip(first_collection, second_collection, third_collection): # tak naprawde 3 llisty leca jak jedna lista tupli
 #     print(f'{first} == {second} == {third}')
-
-
-# # unpacking
-# x = (1, 3, 'b')
-# a, b, c = x
-# o, k, _ = x # tutaj underscore mowi, ze trzeciej nie chcemy i wywalone w nią
-# p, *z = x
-# *u, i = x # ostatni to i, pierwsze to u
-# v, *_ = x  # tylko 1 chcemy
-# *_, v = x  # odwrotnie
-
-
-# # klasy tips
-# class Testowa:
-#     maciek = 'maciek'
-
-# class Testowa2:
-#     def __init__(self):
-#         self.maciek = 'maciek'
-
-# t1 = Testowa()
-# t2 = Testowa2()
-# setattr(t1, 'new_field', 'its_value')
-# setattr(t2, 'new_field', 'its_value')
-# print(t1.new_field)
-# print(t2.new_field)
-# print(getattr(t1, 'new_field')) # to to samo robi co 2 linijki wyzej tylko ladniej 
-
 
 # # loop through dict 
 # my_dict = {'a': 1, 'b': 2}
@@ -51,42 +22,10 @@
 # for value in my_dict.values():
 #     print(value)
 
-
-# # getpass niewidoczny input :D
-# x = input('podaj nazwe')
-# from getpass import getpass
-# y = getpass('podaj haslo')
-
-# # properties like in C#
-# class TestowaKlasa:
-#     def __init__(self):
-#         self.__zmienna1 = 1
-
-#     @property
-#     def zmienna1(self):    # property musi miec inna nazwe niz zmienna bo inaczej rekurencja
-#         return self.__zmienna1
-
-# obj = TestowaKlasa()
-# print(obj.zmienna1)
-
-
-# # MEGA CIEKAWE :
-# list1 = [0, 1, 2, 3, 4]
-
-# is_any_element_of_list_equal_to_false = any(list1) # szuka jakiegokolwiek True elementu != 0 != False != None != ""
-
-# are_all_list_elements_equal_true = all(list1) # sprawdza czy wszystkie True, czyli nie sa None, 0, False itd itp
-
-
-# # iterator
-# lista = [1,2,3,4]
-# iteratorek = iter(lista)
-
 # #
 # # ENUMERATE pomaga, jak chcemy iterowac po liscie z customowym indexem
 
 # # Zip pomaga jak chcemy loopowac po wielu kolekcjach jednoczesnie, cos jakby to byl tuple 
-
 
 # # Pythonskie linq
 # lis = [1,2,3,4,5] 
@@ -110,32 +49,6 @@
 
 
 # # Cycle() w pythonie to infinite operator, czyli pętla ktora nie konczy sie po pierwszym przeiterowaniu wszystkiego po razie 
-
-
-# # Docstring - komentarzowa dokumentacja
-# def moja_funkcja(nazwa: str, wiek: int) -> bool:
-#     """ moja_funkcja(nazwa: str, wiek: int) -> zwraca true jesli elo benc # NIE PISZ TEJ LINIJKI JAK NIC NIE ZWRACA ELO BENC
-
-#         Parameters :
-#         nazwa: str => musi byc taka siaka i owaka
-#         wiek: int => musi byc taki siaki i owaki
-
-#         Raises :
-#         ElobencError gdy sie zdenerwuje
-#     """
-#     return True if True else False
-
-# moja_funkcja('asd', 123) # WSZYSTKO LADNIE DOKUMENTUJE JAK W C#, ze widac w IDE jak cos wywolujesz
-
-
-
-# # KeyWord only arguments
-# def funkcja(a: str, b, c=True) # TUTAJ zadnego parametru nazwy nie musisz podac
-#     pass
-
-# def funkcja_uzywajaca_keyword_arguments(a, b: str, *, c = True) # Tutaj wszystkie na prawo od gwiazdki musisz podac nazwe np. c
-#     pass
-
 
 # # collections
 # Point = collections.namedtuple("Point", "x y z") # Point will be the name and 3 arguments will be created as a tuple
@@ -166,7 +79,6 @@
 # float2 = .123 # NIE TRZEBA DAWAC 0 przed przecinkiem
 # are_bigger = float1 > .99 and float2 > .99 # NIE TRZEBA DAWAC 0 przed przecinkiem
 
-
 # # Yield lazy loading example 
 # lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -183,12 +95,3 @@
 #         time.sleep(.5)
 
 # process_list_by_single_element()
-
-
-# from ehm.ehh import Ehh
-# eh = Ehh()
-# eh.printehh()
-# JOB DONE WITH IMPORTING FILE FROM ANOTHER FOLDER
-# in this case, ehm is a folder on the same level as training.py, inside ehm there is ehh.py file and inside file there is Ehh class
-
-
