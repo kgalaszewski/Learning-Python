@@ -1,0 +1,20 @@
+1) install django using pip3 install Django
+
+2) install sqlite browser from sqlitebrowser.org
+
+2) create project using django-admin startproject name
+
+3) start server using python manage.py runserver
+
+4) create startapp files using python manage.py startapp adoptions
+
+5) after creating models in models.py create migration using python manage.py {commandName}
+	migration command names :
+	- makemigrations - generates migrations based on current models structure 
+	- migrate - runs all migrations in the proj to the current state / should be run also at proj creation to migrate default migrations
+	- showmigrations - showing list of migrations with checkbox if applied or not
+
+6) to create an admin - type python manage.py createsuperuser to be able to edit db from localhost and autorizathion etc 
+
+7) python manage.py shell to enter shell in running server 
+

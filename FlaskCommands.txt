@@ -1,0 +1,20 @@
+Flask tut :
+1) create new virtual env :
+python -m venv nazwa
+
+2) select interpreter to the one for the env
+
+3) pip install flask
+
+4) create app.py in project folder with example of :
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return 'Hello, Flask!'
+
+5) python -m flask run
+
+6) have fun

@@ -1,0 +1,30 @@
+Visual Studio COde :
+
+### FINDING SOMETHING IN THE CODE ### :
+F12 - go to definition
+ALT + F12 - peek definition in small window
+SHIFT + ALF + F12 - find all references
+CTRL + G — jump to line.
+CTRL + P - Open file by name 
+CTRL + SHIFT + O - search for classes, methods, fields in FILE, with ':' its sorted
+
+
+### SELECTING / MOVING THE CODE ### :
+CTRL + ALT - multi-cursor
+ALT + CLICK — Multi cursor using mouse
+ALT + UP/DOWN ARROW — Move current line up/down.
+SHIFT + ALT + Mouse - select the text by columns selected
+
+
+### FORMATTING THE CODE ### :
+SHFT + ALT + F - Formatting the code
+CTRL + F2 - change all occurances
+
+
+### OTHERS ### :
+CTRL + B — Open/close side bar
+CTRL + | — Split editor.
+CTRL + W — Close current tab.
+CTRL + SHFT + ~ - Terminal
+CTRL + SHFT + M - Errors
+CTRL + K + M - change language mode - for ex. from Javascript to Python
