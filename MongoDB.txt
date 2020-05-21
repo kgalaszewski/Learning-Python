@@ -1,0 +1,38 @@
+MONGODB
+
+net start MongoDB
+net stop MongoDB
+
+
+# client = MongoClient('localhost', 27017)
+# db = client["N3231KGDB"]
+# collection = db["test"]  # change collection name
+
+# # inserting one
+# collection.insert({"_id": "1", "value": "something1"})
+
+# # inserting many
+# collection.insert_many([{"_id": "2", "value": "something1"},
+#                         {"_id": "3", "value": "something1"}])
+
+# # or like that without specifying id
+# # >>> posts = db.posts
+# # >>> post_id = posts.insert_one(post).inserted_id
+
+# # check names of existing collections
+# db.list_collection_names()
+
+# # get by id - this one will get all passing condition
+# result = collection.find({"_id": "1", "value": "something"})
+
+# # only one
+# reult2 = collection.find_one({"": ""})
+
+# # delete
+# colelction.delete_one({"": ""})
+
+# # delete_many works too
+
+# updating
+# collection.update_one({"_id":5}, {"$set":{"value":"somethingElse"}})
+# same with update_many

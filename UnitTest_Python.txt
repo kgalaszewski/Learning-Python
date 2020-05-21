@@ -1,0 +1,23 @@
+Unit tests :
+
+1) import unittest
+
+2) nazwa klasy jak : CalcTests lub TestCalc
+
+3) wywolanie to python -m unittest CalcTests.py
+
+4) drugi sposob:
+jesli dodamy w klasie : 
+if __name__ == '__main__':
+    unittest.main()
+	
+to wywolanie jest normalne : python CalcTests.py
+i mozna przez edytor 
+
+5) tutaj jak chcemy dodac zmienna na klase to dodajemy w setUp() a nie w konstruktorze
+
+6) ciekawa opcja uzycia context managera do assert throws :
+        with self.assertRaises(ValueError):
+            self.subject.divide(10, 0)
+			
+7) są magic mocki i zwykle mocki
