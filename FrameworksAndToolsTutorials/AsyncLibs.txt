@@ -1,0 +1,15 @@
+Default Mongo, Flask etc libraries dont have support for Asynchronous programming - SOME OF THEM HAVE BUT SELDOM
+
+
+
+Asynchronous capable libraries list : 
+
+1) aiofiles - for File input output operations
+
+2) umongo - for MongoDb (contains both sync and async calls)
+
+3) asyncpg - for PostgreSQL Database 
+
+4) asyncio-redis - for Redis client
+
+and more :P # TODO keep updating
